@@ -1,0 +1,10 @@
+@mixin backgroundgaleria ($bg-att, $bg-pos, $bg-rep, $bg-siz) {
+    background-attachment: $bg-att;
+    background-position: $bg-pos;
+    background-repeat: $bg-rep;
+    background-size: $bg-siz;
+}
+
+.parallax{
+    @include backgroundgaleria(fixed, center, no-repeat, cover)
+}
